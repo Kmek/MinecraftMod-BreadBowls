@@ -59,6 +59,8 @@ public class BreadBowlsMod
             () -> new BreadBowlSoupItem(11, 0.6F));
     public static final RegistryObject<Item> MUSHROOM_STEW = ITEMS.register("mushroom_stew",
             () -> new BreadBowlSoupItem(11, 0.6F));
+    public static final RegistryObject<Item> RABBIT_STEW = ITEMS.register("rabbit_stew",
+            () -> new BreadBowlSoupItem(15, 0.6F));
 
     // Creates a creative tab with the id "breadbowls:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
@@ -70,6 +72,7 @@ public class BreadBowlsMod
                 output.accept(BREAD_BOWL.get());
                 output.accept(BEETROOT_SOUP.get());
                 output.accept(MUSHROOM_STEW.get());
+                output.accept(RABBIT_STEW.get());
             }).build());
 
     public BreadBowlsMod(FMLJavaModLoadingContext context)
