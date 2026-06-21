@@ -12,6 +12,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class BreadBowlSoupItem extends Item {
+    private String tooltipTranslatable = null;
+
     public BreadBowlSoupItem(Properties p_41383_) {
         super(p_41383_);
     }
@@ -34,10 +36,17 @@ public class BreadBowlSoupItem extends Item {
                         .build()));
     }
 
-//    @Override
-//    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
-//        tooltip.add(Component.translatable("tooltip.breadbowls.item_description")
-//                .withStyle(ChatFormatting.GRAY));
-//        super.appendHoverText(stack, level, tooltip, flag);
-//    }
+    public BreadBowlSoupItem(FoodProperties props, String tooltip) {
+        this(props);
+        this.tooltipTranslatable = tooltip;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
+        if (this.tooltipTranslatable != null) {
+            tooltip.add(Component.translatable(this.tooltipTranslatable)
+                    .withStyle(ChatFormatting.GRAY));
+        }
+        super.appendHoverText(stack, level, tooltip, flag);
+    }
 }

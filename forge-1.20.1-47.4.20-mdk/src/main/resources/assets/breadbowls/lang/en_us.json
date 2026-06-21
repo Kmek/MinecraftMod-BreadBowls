@@ -3,6 +3,8 @@
   "item.breadbowls.beetroot_soup": "Beetroot Soup Bread Bowl",
   "item.breadbowls.mushroom_stew": "Mushroom Stew Bread Bowl",
   "item.breadbowls.rabbit_stew": "Rabbit Stew Bread Bowl",
+  "item.breadbowls.suspicious_stew": "Suspicious Stew Bread Bowl",
+  "tooltip.breadbowls.suspicious_stew": "Neutralized and safe to eat!",
   "tooltip.breadbowls.item_description": "in a bread bowl",
   "itemGroup.breadbowls.example_tab": "Bread Bowls"
 }

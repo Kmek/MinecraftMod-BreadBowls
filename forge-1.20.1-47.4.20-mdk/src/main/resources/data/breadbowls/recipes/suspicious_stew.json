@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:suspicious_stew"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "W": {
+      "item": "breadbowls:bread_bowl"
+    }
+  },
+  "pattern": [
+    "SM",
+    "W "
+  ],
+  "result": {
+    "item": "breadbowls:suspicious_stew"
+  }
+}
