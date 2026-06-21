@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "minecraft:wheat"
+      "item": "minecraft:bread"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
   ],
   "result": {
     "item": "breadbowls:bread_bowl",
-    "count": 1
+    "count": 3
   }
 }

@@ -8,6 +8,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -48,8 +49,21 @@ public class BreadBowlsMod
     // Creates a new food item with the id "breadbowls:example_id", nutrition 1 and saturation 2
 //    public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
 //            .alwaysEat().nutrition(1).saturationMod(2f).build())));
-    public static final RegistryObject<Item> BREAD_BOWL = ITEMS.register("bread_bowl", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEat().nutrition(1).saturationMod(2f).build())));
+    public static final RegistryObject<Item> BREAD_BOWL = ITEMS.register("bread_bowl",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                        .alwaysEat()
+                        .nutrition(5)
+                        .saturationMod(0.6F)
+                        .build())));
+    public static final RegistryObject<Item> BEETROOT_STEW = ITEMS.register("beetroot_soup",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(16)
+                    .food(new FoodProperties.Builder()
+                        .alwaysEat()
+                        .nutrition(11)
+                        .saturationMod(0.6F)
+                        .build())));
 
     // Creates a creative tab with the id "breadbowls:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
@@ -59,6 +73,7 @@ public class BreadBowlsMod
             .displayItems((parameters, output) -> {
 //                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
                 output.accept(BREAD_BOWL.get());
+                output.accept(BEETROOT_STEW.get());
             }).build());
 
     public BreadBowlsMod(FMLJavaModLoadingContext context)

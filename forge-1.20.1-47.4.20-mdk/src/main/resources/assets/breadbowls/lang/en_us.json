@@ -1,6 +1,5 @@
 {
-  "item.breadbowls.example_item": "My Cool Item",
-  "block.breadbowls.example_block": "My Cool Block",
   "item.breadbowls.bread_bowl": "Bread Bowl",
+  "item.breadbowls.beetroot_soup": "Beetroot Soup",
   "itemGroup.breadbowls.example_tab": "Bread Bowls"
 }
