@@ -1,5 +1,7 @@
 {
   "item.breadbowls.bread_bowl": "Bread Bowl",
-  "item.breadbowls.beetroot_soup": "Beetroot Soup",
+  "item.breadbowls.beetroot_soup": "Beetroot Soup Bread Bowl",
+  "item.breadbowls.mushroom_stew": "Mushroom Stew Bread Bowl",
+  "tooltip.breadbowls.item_description": "in a bread bowl",
   "itemGroup.breadbowls.example_tab": "Bread Bowls"
 }

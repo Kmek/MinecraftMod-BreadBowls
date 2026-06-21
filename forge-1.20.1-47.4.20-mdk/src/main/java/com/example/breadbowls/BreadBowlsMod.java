@@ -8,7 +8,6 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -56,14 +55,10 @@ public class BreadBowlsMod
                         .nutrition(5)
                         .saturationMod(0.6F)
                         .build())));
-    public static final RegistryObject<Item> BEETROOT_STEW = ITEMS.register("beetroot_soup",
-            () -> new Item(new Item.Properties()
-                    .stacksTo(16)
-                    .food(new FoodProperties.Builder()
-                        .alwaysEat()
-                        .nutrition(11)
-                        .saturationMod(0.6F)
-                        .build())));
+    public static final RegistryObject<Item> BEETROOT_SOUP = ITEMS.register("beetroot_soup",
+            () -> new BreadBowlSoupItem(11, 0.6F));
+    public static final RegistryObject<Item> MUSHROOM_STEW = ITEMS.register("mushroom_stew",
+            () -> new BreadBowlSoupItem(11, 0.6F));
 
     // Creates a creative tab with the id "breadbowls:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
@@ -73,7 +68,8 @@ public class BreadBowlsMod
             .displayItems((parameters, output) -> {
 //                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
                 output.accept(BREAD_BOWL.get());
-                output.accept(BEETROOT_STEW.get());
+                output.accept(BEETROOT_SOUP.get());
+                output.accept(MUSHROOM_STEW.get());
             }).build());
 
     public BreadBowlsMod(FMLJavaModLoadingContext context)

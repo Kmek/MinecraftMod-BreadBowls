@@ -3,19 +3,21 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "minecraft:beetroot"
+      "item": "minecraft:brown_mushroom"
+    },
+    "R": {
+      "item": "minecraft:red_mushroom"
     },
     "W": {
       "item": "breadbowls:bread_bowl"
     }
   },
   "pattern": [
-    "BBB",
-    "BBB",
-    " W "
+    "BR",
+    "W "
   ],
   "result": {
-    "item": "breadbowls:beetroot_soup",
+    "item": "breadbowls:mushroom_stew",
     "count": 1
   }
 }
