@@ -1,23 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "B": {
+  "ingredients": [
+    {
       "item": "minecraft:brown_mushroom"
     },
-    "R": {
+    {
       "item": "minecraft:red_mushroom"
     },
-    "W": {
+    {
       "item": "breadbowls:bread_bowl"
     }
-  },
-  "pattern": [
-    "BR",
-    "W "
   ],
   "result": {
-    "item": "breadbowls:mushroom_stew",
-    "count": 1
+    "item": "breadbowls:mushroom_stew"
   }
 }

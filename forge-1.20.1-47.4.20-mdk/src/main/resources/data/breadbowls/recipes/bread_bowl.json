@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "minecraft:wheat"
+      "tag": "forge:crops/wheat"
     }
   },
   "pattern": [
@@ -11,7 +11,6 @@
     " B "
   ],
   "result": {
-    "item": "breadbowls:bread_bowl",
-    "count": 1
+    "item": "breadbowls:bread_bowl"
   }
 }

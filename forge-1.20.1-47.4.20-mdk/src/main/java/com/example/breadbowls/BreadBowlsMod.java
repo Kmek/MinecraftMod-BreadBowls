@@ -63,9 +63,9 @@ public class BreadBowlsMod
             () -> new BreadBowlSoupItem(Foods.SUSPICIOUS_STEW, "tooltip.breadbowls.suspicious_stew"));
 
     // Creates a creative tab with the id "breadbowls:example_tab" for the example item, that is placed after the combat tab
-    public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
+    public static final RegistryObject<CreativeModeTab> CREATIVE_TAB = CREATIVE_MODE_TABS.register("creative_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .title(Component.translatable("itemGroup.breadbowls.example_tab"))
+            .title(Component.translatable("itemGroup.breadbowls.creative_tab"))
             .icon(() -> BREAD_BOWL.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
 //                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
