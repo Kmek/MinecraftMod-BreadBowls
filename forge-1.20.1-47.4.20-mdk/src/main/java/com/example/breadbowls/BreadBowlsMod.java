@@ -5,9 +5,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -50,17 +52,13 @@ public class BreadBowlsMod
 //            .alwaysEat().nutrition(1).saturationMod(2f).build())));
     public static final RegistryObject<Item> BREAD_BOWL = ITEMS.register("bread_bowl",
             () -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder()
-                        .alwaysEat()
-                        .nutrition(5)
-                        .saturationMod(0.6F)
-                        .build())));
+                    .food(Foods.BREAD)));
     public static final RegistryObject<Item> BEETROOT_SOUP = ITEMS.register("beetroot_soup",
-            () -> new BreadBowlSoupItem(11, 0.6F));
+            () -> new BreadBowlSoupItem(Foods.BEETROOT_SOUP));
     public static final RegistryObject<Item> MUSHROOM_STEW = ITEMS.register("mushroom_stew",
-            () -> new BreadBowlSoupItem(11, 0.6F));
+            () -> new BreadBowlSoupItem(Foods.MUSHROOM_STEW));
     public static final RegistryObject<Item> RABBIT_STEW = ITEMS.register("rabbit_stew",
-            () -> new BreadBowlSoupItem(15, 0.6F));
+            () -> new BreadBowlSoupItem(Foods.RABBIT_STEW));
 
     // Creates a creative tab with the id "breadbowls:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()

@@ -20,7 +20,6 @@ public class BreadBowlSoupItem extends Item {
         super(new Item.Properties()
                 .stacksTo(16)
                 .food(new FoodProperties.Builder()
-                        .alwaysEat()
                         .nutrition(nutrition)
                         .saturationMod(saturation)
                         .build()));
@@ -29,7 +28,10 @@ public class BreadBowlSoupItem extends Item {
     public BreadBowlSoupItem(FoodProperties props) {
         super(new Item.Properties()
                 .stacksTo(16)
-                .food(props));
+                .food(new FoodProperties.Builder()
+                        .nutrition(props.getNutrition() + 5) // 5 for the bread
+                        .saturationMod(props.getSaturationModifier())
+                        .build()));
     }
 
 //    @Override
