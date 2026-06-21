@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    }
+  },
+  "pattern": [
+    "B B",
+    " B "
+  ],
+  "result": {
+    "item": "breadbowls:bread_bowl",
+    "count": 4
+  }
+}
