@@ -1,4 +1,4 @@
-package com.example.breadbowls;
+package kmek.breadbowls;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

@@ -1,4 +1,4 @@
-package com.example.breadbowls;
+package kmek.breadbowls;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
