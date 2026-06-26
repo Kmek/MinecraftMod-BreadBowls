@@ -1,15 +1,14 @@
 package kmek.breadbowls;
 
 import com.mojang.logging.LogUtils;
+import kmek.breadbowls.items.BreadBowlItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -54,13 +53,13 @@ public class BreadBowlsMod
             () -> new Item(new Item.Properties()
                     .food(Foods.BREAD)));
     public static final RegistryObject<Item> BEETROOT_SOUP = ITEMS.register("beetroot_soup",
-            () -> new BreadBowlSoupItem(Foods.BEETROOT_SOUP));
+            () -> new BreadBowlItem(Foods.BEETROOT_SOUP));
     public static final RegistryObject<Item> MUSHROOM_STEW = ITEMS.register("mushroom_stew",
-            () -> new BreadBowlSoupItem(Foods.MUSHROOM_STEW));
+            () -> new BreadBowlItem(Foods.MUSHROOM_STEW));
     public static final RegistryObject<Item> RABBIT_STEW = ITEMS.register("rabbit_stew",
-            () -> new BreadBowlSoupItem(Foods.RABBIT_STEW));
+            () -> new BreadBowlItem(Foods.RABBIT_STEW));
     public static final RegistryObject<Item> SUSPICIOUS_STEW = ITEMS.register("suspicious_stew",
-            () -> new BreadBowlSoupItem(Foods.SUSPICIOUS_STEW, "tooltip.breadbowls.suspicious_stew"));
+            () -> new BreadBowlItem(Foods.SUSPICIOUS_STEW, "tooltip.breadbowls.suspicious_stew"));
 
     // Creates a creative tab with the id "breadbowls:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> CREATIVE_TAB = CREATIVE_MODE_TABS.register("creative_tab", () -> CreativeModeTab.builder()
