@@ -20,6 +20,7 @@
     }
   ],
   "result": {
-    "item": "breadbowls:rabbit_stew"
+    "id": "breadbowls:rabbit_stew",
+    "count": 1
   }
 }
