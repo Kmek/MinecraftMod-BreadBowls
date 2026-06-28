@@ -1,5 +1,9 @@
 {
-  "itemGroup.breadbowls": "Example Mod Tab",
-  "block.breadbowls.example_block": "Example Block",
-  "item.breadbowls.example_item": "Example Item"
+  "item.breadbowls.bread_bowl": "Bread Bowl",
+  "item.breadbowls.beetroot_soup": "Beetroot Soup Bread Bowl",
+  "item.breadbowls.mushroom_stew": "Mushroom Stew Bread Bowl",
+  "item.breadbowls.rabbit_stew": "Rabbit Stew Bread Bowl",
+  "item.breadbowls.suspicious_stew": "Suspicious Stew Bread Bowl",
+  "tooltip.breadbowls.suspicious_stew": "Neutralized and safe to eat!",
+  "itemGroup.breadbowls.creative_tab": "Bread Bowls"
 }

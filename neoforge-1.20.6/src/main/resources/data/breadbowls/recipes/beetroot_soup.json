@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:beetroot"
+    },
+    "W": {
+      "item": "breadbowls:bread_bowl"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BBB",
+    " W "
+  ],
+  "result": {
+    "item": "breadbowls:beetroot_soup"
+  }
+}
