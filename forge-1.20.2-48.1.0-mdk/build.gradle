@@ -120,7 +120,35 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    maven {
+        // CraftTweaker and JEI
+        name = "BlameJared"
+        url = "https://maven.blamejared.com/"
+        content {
+            includeGroup "com.blamejared.crafttweaker"
+            includeGroup "org.openzen.zencode"
+            includeGroup "mezz.jei"
+        }
+    }
+    maven {
+        // JEI fallback
+        name = "Modmaven"
+        url = "https://modmaven.dev/"
+        content {
+            includeGroup "mezz.jei"
+        }
+    }
+    maven {
+        name = "Cursemaven"
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven { url "https://maven.ryanliptak.com/" }
 }
+
 
 dependencies {
     // Specify the version of Minecraft to use.
@@ -144,6 +172,15 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    // compile against the JEI API but do not include it at runtime
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
+    // at runtime, use the full JEI jar for Forge
+    runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
+
+    compileOnly fg.deobf("squeek.appleskin:appleskin-forge:${appleskin_version}:api")
+    runtimeOnly fg.deobf("squeek.appleskin:appleskin-forge:${appleskin_version}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -167,6 +204,7 @@ tasks.named('processResources', ProcessResources).configure {
 
 // Example for how to get properties into the manifest for reading at runtime.
 tasks.named('jar', Jar).configure {
+    archiveBaseName = "${mod_id}_${minecraft_version}-forge"
     manifest {
         attributes([
                 'Specification-Title'     : mod_id,
