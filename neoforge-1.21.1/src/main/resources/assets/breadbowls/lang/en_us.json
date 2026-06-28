@@ -1,0 +1,13 @@
+{
+  "itemGroup.breadbowls": "Example Mod Tab",
+  "block.breadbowls.example_block": "Example Block",
+  "item.breadbowls.example_item": "Example Item",
+
+  "breadbowls.configuration.title": "Bread Bowls Configs",
+  "breadbowls.configuration.section.breadbowls.common.toml": "Bread Bowls Configs",
+  "breadbowls.configuration.section.breadbowls.common.toml.title": "Bread Bowls Configs",
+  "breadbowls.configuration.items": "Item List",
+  "breadbowls.configuration.logDirtBlock": "Log Dirt Block",
+  "breadbowls.configuration.magicNumberIntroduction": "Magic Number Text",
+  "breadbowls.configuration.magicNumber": "Magic Number"
+}
