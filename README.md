@@ -28,11 +28,12 @@ Also check out [Bread Bowl's Delight](https://www.curseforge.com/minecraft/mc-mo
 
 | MC Version        | Forge | NeoForge |
 |-------------------|-------|----------|
-| 1.19.2            | x     |          |
-| 1.20.1            | x     |          |
-| 1.20.2            | x     |          |
-| 1.20.6            |       | x        |
 | 1.21.1            |       | x        |
+| 1.20.6            |       | x        |
+| 1.20.2            | x     |          |
+| 1.20.1            | x     |          |
+| 1.19.2            | x     |          |
+| 1.19.1            | x     |          |
 
 ---
 ### Note
