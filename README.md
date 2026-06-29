@@ -17,7 +17,15 @@ You can look at my source code for learning purposes, but you cannot copy!
 
 ## Compatibility
 - Compiled with **JEI** for crafting recipe support
-- Currently focusing on Minecraft 1.20.1 (will work on porting at a later time)
+- Working on expanding version support for BreadBowls v1.2.1
+
+| MC Version        | Forge | NeoForge |
+|-------------------|-------|----------|
+| 1.19.2            | x     |          |
+| 1.20.1            | x     |          |
+| 1.20.2            | x     |          |
+| 1.20.6            |       | x        |
+| 1.21.1            |       | x        |
 
 ---
 # What's in the mod?
