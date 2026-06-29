@@ -1,4 +1,4 @@
-# MinecraftMod-BreadBowls
+# Bread Bowls
 
 ![banner image](https://github.com/Kmek/MinecraftMod-BreadBowls/blob/main/images/banner.png?raw=true)
 
