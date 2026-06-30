@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:crops/wheat"
+    }
+  },
+  "pattern": [
+    "B B",
+    " B "
+  ],
+  "result": {
+    "id": "breadbowls:bread_bowl",
+    "count": 1
+  }
+}
